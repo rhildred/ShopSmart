@@ -10,6 +10,7 @@ namespace ShopSmart.Models
     /// </summary>
     public class Product
     {
+        public int id { get; set; }
         public string gtin13 { get; set; }
         public string sku { get; set; }
         public string name { get; set; }
