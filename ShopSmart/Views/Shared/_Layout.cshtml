@@ -21,6 +21,7 @@
             </div>
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
+                    <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Show" ? "active" : "")"><a href="/Products/Show">Products</a></li>
                     <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "About" ? "active" : "")"><a href="/Home/About">About</a></li>
                     <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Contact" ? "active" : "")"><a href="/Home/Contact">Contact</a></li>
                 </ul>
