@@ -16,6 +16,34 @@ namespace ShopSmart.Controllers
         {
             return db.Products;
         }
- 
+        // GET api/Products/5
+        public IHttpActionResult GetProduct(int id)
+        {
+            Product product = db.Products.Find(id);
+            if (product == null)
+            {
+                return NotFound();
+            }
+            return Ok(product);
+        }
+        // POST api/Products
+        public IHttpActionResult PostProduct(Product product)
+        {
+            if (ModelState.IsValid)
+            {
+                db.Products.Add(product);
+                db.SaveChanges();
+                var uri = new Uri(
+                Url.Link(
+                "DefaultApi",
+                new { id = product.id }));
+                return Created(uri, product);
+            }
+            else
+            {
+                return BadRequest(ModelState);
+            }
+        }
+
     }
 }
