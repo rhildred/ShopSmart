@@ -1,0 +1,5 @@
+bin
+ShopSmart/obj
+ShopSmart/bin
+ShopSmart/App_Data
+*.suo
