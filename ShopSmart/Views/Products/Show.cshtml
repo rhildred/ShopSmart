@@ -4,8 +4,13 @@
 
 <h2>Product page goes here!</h2>
 
-@foreach (var product in Model) {
-    <p>@product.name</p>
+@foreach (var product in Model)
+{
+    <p>
+        <a href="@product.image">
+            @product.name
+        </a>
+    </p>
 }
 
 
