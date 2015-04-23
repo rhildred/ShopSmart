@@ -14,11 +14,6 @@ namespace ShopSmart.Controllers
     /// </summary>
     /// 
 
-    public class ProductsContext : DbContext
-    {
-        public ProductsContext() : base("Products") { }
-        public DbSet<Product> Products { get; set; }
-    }
 
     public class ProductsController : Controller
     {

@@ -20,5 +20,7 @@ namespace ShopSmart.Models
         public string image { get; set; }
         public string description { get; set; }
         public string brand { get; set; }
+        public virtual Place Place { get; set; }
+
     }
 }

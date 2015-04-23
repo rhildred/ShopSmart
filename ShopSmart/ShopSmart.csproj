@@ -136,12 +136,29 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\PlacesController.cs" />
     <Compile Include="Controllers\CatalogController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductsContext.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201504231411397_InitialCreate.cs" />
+    <Compile Include="Migrations\201504231411397_InitialCreate.Designer.cs">
+      <DependentUpon>201504231411397_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201504231424091_Places.cs" />
+    <Compile Include="Migrations\201504231424091_Places.Designer.cs">
+      <DependentUpon>201504231424091_Places.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201504231453180_ForeignKey.cs" />
+    <Compile Include="Migrations\201504231453180_ForeignKey.Designer.cs">
+      <DependentUpon>201504231453180_ForeignKey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Person.cs" />
+    <Compile Include="Models\Place.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -241,6 +258,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201504231411397_InitialCreate.resx">
+      <DependentUpon>201504231411397_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504231424091_Places.resx">
+      <DependentUpon>201504231424091_Places.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504231453180_ForeignKey.resx">
+      <DependentUpon>201504231453180_ForeignKey.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
