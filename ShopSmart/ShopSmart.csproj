@@ -133,6 +133,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApiControllers\LoginController.cs" />
+    <Compile Include="ApiControllers\PeopleController.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -159,6 +160,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Login.cs" />
+    <Compile Include="Models\MailCode.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\Place.cs" />
     <Compile Include="Models\Product.cs" />

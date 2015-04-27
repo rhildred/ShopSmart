@@ -9,7 +9,7 @@
             angular.extend($scope, {
                 InsertProduct: function () {
                     //alert(JSON.stringify($scope.model));
-                    $http.post("../Api/Catalog", $scope.model).success($scope.GoodJob);
+                    $http.post("../Api/Products", $scope.model).success($scope.GoodJob);
                 },
                 GoodJob: function (data) {
                     alert(JSON.stringify(data));
